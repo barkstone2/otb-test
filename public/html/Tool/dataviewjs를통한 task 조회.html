@@ -1,0 +1,17 @@
+<p>dataviewjs 태스크 조회 코드</p>
+<pre><code class="language-text">const tasks = dv.current().file.tasks
+	.where(t => !t.fullyCompleted)
+	.groupBy(t => t.start)
+	.groupIn(t => t.tags)
+	.sort(t => t.start)
+	.sort(t => t.key || "")
+tasks.forEach((task) => {
+	dv.header(3, task.key)
+	const dateRow = task.rows
+	dateRow.forEach((tagGroup) => {
+		dv.header(6, tagGroup.key)
+		const tagRow = tagGroup.rows
+		dv.taskList(tagRow, false)
+	})
+})
+</code></pre>

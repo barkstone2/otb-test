@@ -1,0 +1,316 @@
+<div class="property-container">
+<div class="property-title" title="프로퍼티 테스트">
+프로퍼티 테스트
+</div>
+<div class="property-value" title="값">
+값
+</div>
+<div class="property-title" title="created">
+created
+</div>
+<div class="property-value" title="2024-03-06 06:35">
+2024-03-06 06:35
+</div>
+<div class="property-title" title="updated">
+updated
+</div>
+<div class="property-value" title="2024-07-26 21:49">
+2024-07-26 21:49
+</div>
+</div>
+<p><a href="/Tool/test/test-obsidian.md" class="backlink">test-obsidian</a><br>
+<a href="/Tool/temp/test-obsidian.md" class="backlink">test-obsidian</a><br>
+<a href="/Tool/test/test-obsidian2.md" class="backlink">test-obsidian2</a></p>
+<p>![[image/nested/이더넷.png]]<br>
+![[image/이더넷.png]]</p>
+<h1>마크다운 사용 가능</h1>
+<p>마크다운 문법이 가물가물하긴 한데 익숙해지면 쓰는데 큰 문제는 없을듯<br>
+오프라인으로 동작하다보니 노션처럼 동기화 문제로 인해 데이터가 사라지는 문제는 없을듯<br>
+다만 실제로 텍스트를 삭제한 경우 그 기록이 남지 않는다는 문제가 있음<br>
+git으로의 동기화 간격을 아주 짧게 설정하지 않는 이상은 이 문제는 해결하기 어려울 것으로 보임</p>
+<ul>
+<li>
+<p>다이어그램 툴을 제공한다</p>
+</li>
+<li>
+<p>문서 간에 링크를 연결할 수 있다</p>
+<ul>
+<li>이를 통해 지식과 개념을 추상화하고, 더 세부적인 내용을 링크 뒤로 감출 수 이싿.</li>
+</ul>
+</li>
+<li>
+<p>태그 기능을 지원하고, 태그 검색을 통해 관련된 문서를 검색할 수 있다.</p>
+</li>
+<li>
+<p>캔버스 만들기 기능으로 마인드 맵을 만들 수 있다.</p>
+</li>
+</ul>
+<p>일단 주요 기능 위주로 정리하자</p>
+<h2>링크 기능</h2>
+<ul>
+<li><code>[[문서 이름]]</code> 형태로 링크를 설정할 수 있다.</li>
+<li>존재하지 않는 문서인 경우에 링크를 먼저 링크를 설정하고 링크 클릭시 문서가 생성된다. 존재하지 않는 문서의 경우에는 살짝 흐릿한 형태로 나온다.</li>
+<li>우측 상단의 backlinks 탭을 눌러 이 문서로 연결된 링크와, 이 문서에서 나가는 링크를 확인할 수 있다.</li>
+<li>그래프 뷰를 통해 문서들 사이의 연결 관계를 확인할 수 있다.</li>
+</ul>
+<h1><a href="/Tool/Obsidian 사용법 정리.md" class="backlink">Obsidian 사용법 정리</a></h1>
+<ul>
+<li><a href="/Tool/Obsidian 사용법 정리.md" class="backlink">Obsidian 사용법 정리</a></li>
+</ul>
+<ol>
+<li><a href="/Tool/Obsidian 사용법 정리.md" class="backlink">Obsidian 사용법 정리</a><br>
+<strong><a href="/Tool/Obsidian 사용법 정리.md" class="backlink">Obsidian 사용법 정리</a></strong><br>
+==<a href="/Tool/Obsidian 사용법 정리.md" class="backlink">Obsidian 사용법 정리</a>==<br>
+<del><a href="/Tool/Obsidian 사용법 정리.md" class="backlink">Obsidian 사용법 정리</a></del><br>
+<em><strong><a href="/Tool/Obsidian 사용법 정리.md" class="backlink">Obsidian 사용법 정리</a></strong></em><br>
+<em><a href="/Tool/Obsidian 사용법 정리.md" class="backlink">Obsidian 사용법 정리</a></em></li>
+</ol>
+<p>-> 다른 노트 앱의 데이터를 옮겨올 수 있는 기능도 제공하는 것으로 보인다.<br>
+-> 추가 마크 다운 문법이 더 있는 것 같은데 어떻게 쓰는지 모르겠다.</p>
+<h3>블럭 지정 및 블럭 링크</h3>
+<pre><code>텍스트 내용 뒤에 다음과 같이 선언한다 ^block-name
+이후 링크 설정시 다음과 같이 블럭 링크를 지정 가능하다.
+[[파일이름#^block-name]]
+</code></pre>
+<p>test test test ^test-block<br>
+#asdqw_asds-asdsadcvzxcㅁㄴㅇㄴㅁ<br>
+#a안아<br>
+#asd_---</p>
+<p>#가나다라<br>
+#ㄱㄱ</p>
+<p>[[Obsidian 사용법 정리#마크다운 사용 가능#링크 기능#블럭 지정 및 블럭 링크]]</p>
+<p>[[Obsidian 사용법 정리#^test-block]]</p>
+<p>공식 마크다운 문법이 아니므로 외부에서는 블럭 링크가 동작하지 않는다.</p>
+<h3>링크 표시 이름 변경</h3>
+<p><code>[[내부 링크|커스텀 표시명]]</code>으로 사용해 표시되는 링크 이름을 변경할 수 있다.<br>
+<a href="/Tool/Obsidian 사용법 정리.md" class="backlink">현재 페이지</a></p>
+<h3>링크 미리보기</h3>
+<p>편집 모드에서 링크에 커서를 올리고 커맨드 키를 누르면 링크 미리보기가 가능하다.<br>
+뷰 모드에서는 마우스를 올리면 미리보기가 나온다.</p>
+<h2>태그</h2>
+<p><code>#태그</code>로 태그를 추가할 수 있다.<br>
+검색에서 <code>tag:#태그</code>처럼 태그를 검색해 태그가 붙은 문서를 모두 찾는것도 가능하다.<br>
+#obsidian</p>
+<h3>중첩 태그</h3>
+<p><code>#parent/child</code>처럼 <code>/</code> 정방향 슬래쉬를 사용해 중첩 태그를 사용할 수 있다.<br>
+#manual/obsidian2</p>
+<h3>태그 형식</h3>
+<p>알파벳, 숫자, 언더스코어, 하이픈, 정방향 슬래시를 태그에 사용할 수 있다. 대소문자가 구분된다. 한글도 사용할 수 있지만 공백을 사용할 수 없다.<br>
+#한글_태그</p>
+<h2>프로퍼티</h2>
+<p>파일 시작 지점에서 <code>---</code>을 입력해 프로퍼티를 추가할 수 있다.<br>
+추가된 프로퍼티는 파일 최상단에 이름과 값으로 노출된다.<br>
+프로퍼티는 문자, 리스트, 숫자, 체크박스, 날짜, 날짜와 시간 타입을 지원한다.<br>
+커맨드 + ; 단축키로 추가할 수도 있다.</p>
+<h1><a href="/Tool/단축키.md" class="backlink">단축키</a></h1>
+<h1>기본 마크 다운</h1>
+<h2>제목</h2>
+<pre><code># heading1
+## heading2
+### heading3
+#### heading4
+##### heading5
+###### heading6
+</code></pre>
+<h2>스타일</h2>
+<table>
+<thead>
+<tr>
+<th>스타일</th>
+<th>구문</th>
+<th>예시</th>
+<th>결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>굵음</td>
+<td><code>** **</code> or <code>__ __</code></td>
+<td><code>**Bold text**</code></td>
+<td><strong>Bold Text</strong></td>
+</tr>
+<tr>
+<td>기울임꼴</td>
+<td><code>* *</code> or <code>_ _</code></td>
+<td><code>*Italic text*</code></td>
+<td><em>Italic text</em></td>
+</tr>
+<tr>
+<td>취소선</td>
+<td><code>~~ ~~</code></td>
+<td><code>~~Striked out text~~</code></td>
+<td><del>Striked out text</del></td>
+</tr>
+<tr>
+<td>형광펜</td>
+<td><code>== ==</code></td>
+<td><code>==Highlighted text ==</code></td>
+<td><mark>Highlighted text</mark></td>
+</tr>
+<tr>
+<td>굵음 안의 기울임꼴</td>
+<td><code>** **</code> and <code>_ _</code></td>
+<td><code>**Bold text and _nested italic_ text**</code></td>
+<td><strong>Bold text and <em>nested italic</em> text</strong></td>
+</tr>
+<tr>
+<td>굵음과 기울임꼴</td>
+<td><code>*** ***</code> or <code>___ ___</code></td>
+<td><code>***Bold and italic text***</code></td>
+<td><strong><em>Bold and italic text</em></strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><mark>불릿</mark></li>
+</ul>
+<ol>
+<li><mark>숫자</mark><br>
+<code>==인라인==</code></li>
+</ol>
+<pre><code>==커드==
+</code></pre>
+<blockquote>
+<p><mark>주석</mark><br>
+<em><mark>ㅇㅇ</mark></em></p>
+</blockquote>
+<p>==aasd == asd==</p>
+<p>==<code>test</code>==</p>
+<h1><mark>헤딩</mark></h1>
+<p><mark>`da</mark></p>
+<p><mark>AB=CD</mark><mark>BDEF</mark><mark>CCADS</mark> ==D == == E==<mark>F F</mark></p>
+<p>풋노트 <sup><a href="#user-content-fn-test" id="user-content-fnref-test" data-footnote-ref aria-describedby="footnote-label">1</a></sup></p>
+<p><mark>테스트</mark><mark>테스트2</mark><mark>테스트3</mark></p>
+<p>==<em><strong>테스트</strong></em>==</p>
+<p><a href="https://naver.com"><mark>naver</mark></a></p>
+<p><mark>ABCD=EDF</mark></p>
+<h2>주석</h2>
+<p><code>> 내용</code>으로 주석을 작성할 수 있다.</p>
+<blockquote>
+<p>주석 내용</p>
+</blockquote>
+<p><a href="/Tool/콜아웃.md" class="backlink">콜아웃</a>으로 전환도 가능하다.</p>
+<h2>목록</h2>
+<p><code>-</code> 혹은 숫자를 사용해 목록을 구성할 수 있다.<br>
+중첩 리스트는 들여쓰기를 사용하면 된다.</p>
+<h2>할일 목록</h2>
+<p><code>- [ ]</code>을 사용하면 빈 체크박스를 생성할 수 있다.<br>
+<code>- [x]</code>로 입력하면 체크된 체크박스가 추가되며, 마우스 상호작용으로 체크를 변경할 수 있다.<br>
+<code>[ ]</code> 내부에 어떤 문자를 입력해도 체크 박스에 체크가 되지만, x를 입력시 취소선도 생긴다.</p>
+<h2>구분선</h2>
+<p>구분선은 <code>***, ---, * * *, - - -</code> 등으로 추가할 수 있다.</p>
+<h2>코드 블럭</h2>
+<p>인라인 코드 블럭은 아래와 같이 백틱으로 감싸면 된다.</p>
+<pre><code>`코드`
+</code></pre>
+<p>코드 블럭은 백틱 세개를 연달아 사용하면 된다.<br>
+별도의 포맷을 지정하고 싶다면 백틱 뒤에 언어를 지정하면 된다.</p>
+<h2>바닥 주석</h2>
+<p>바닥 주석을 추가하고 싶다면 아래와 같이 하면 된다.<br>
+읽기 모드에서만 동작한다.</p>
+<pre><code>어떤 용어[^1]
+
+[^1]: 설명
+[^name]: 설명
+위처럼 사용해 인식을 쉽게 만들 수 있다. 표시는 숫자로 나온다.
+
+^[인라인 설명] 처럼 사용할 수도 있다.
+</code></pre>
+<p>테스트 <sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref aria-describedby="footnote-label">2</a></sup><br>
+테스트 <sup><a href="#user-content-fn-%EC%9D%B4%EB%A6%84" id="user-content-fnref-%EC%9D%B4%EB%A6%84" data-footnote-ref aria-describedby="footnote-label">3</a></sup><br>
+인라인 풋노트^[설명을 기입한다]<br>
+^[<a href="https://naver.com">네이버</a>]</p>
+<h2>마크다운 주석</h2>
+<p>마크다운 주석은 <code>%%</code>으로 텍스트를 감싸서 추가할 수 있다.<br>
+마크다운 주석은 편집 모드에서만 보인다.<br>
+%%마크다운 주석%%</p>
+<h2>테이블</h2>
+<pre><code>head | head
+--   | --
+컬럼  | 컬럼
+</code></pre>
+<p>위와 같은 형태로 작성하면 테이블이 생성된다.<br>
+테이블 내에서의 정렬은 다음과 같이 부여할 수 있다.</p>
+<pre><code>left-align | center-align | right-align
+:-- | :--: | --:
+내용 | 내용 | 내용
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="left">왼쪽 정렬</th>
+<th align="center">가운데 정렬</th>
+<th align="right">오른쪽 정렬</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">내용</td>
+<td align="center">내용</td>
+<td align="right">내용</td>
+</tr>
+</tbody>
+</table>
+<h2>다이어그램</h2>
+<p>머메이드를 사용해서 다이어그램과 차트를 추가할 수 있다.<br>
+머메이드 다이어그램을 추가하려면 머메이드 코드 블럭을 추가하면 된다.</p>
+<pre><code>	```mermaid 
+		sequenceDiagram 
+		Alice->>+John: Hello John, how are you? 
+		Alice->>+John: John, can you hear me? 
+		John-->>-Alice: Hi Alice, I can hear you! 
+		John-->>-Alice: I feel great! 
+	```
+</code></pre>
+<pre><code class="language-mermaid">	sequenceDiagram 
+	Alice->>+John: Hello John, how are you? 
+	Alice->>+John: John, can you hear me? 
+	John-->>-Alice: Hi Alice, I can hear you! 
+	John-->>-Alice: I feel great! 
+</code></pre>
+<p><a href="https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNpVjstqw0AMRX9FaNVC_ANeFBq7zSbQQrPzZCFsOTMk80CWCcH2v3ccb1qtxD3nCk3Yxo6xxP4W760lUTjVJkCe96ay4gb1NJyhKN7mAyv4GPgxw_7lEGGwMSUXLq-bv18lqKbjqjGodeG6bKh69r8Cz1A3R0oa0_kvOd3jDB-N-7b5_H9ihXPrs-mp7KloSaAieSq4Q8_iyXX5_WlNDKplzwbLvHYkV4MmLNmjUePPI7RYqoy8wzF1pFw7ugj5LVx-AfLqVWg">머메이드 라이브 에디터</a>를 통해서 다이어그램을 생성할 수도 있다.</p>
+<h2>수학 공식</h2>
+<p>LaTeX 표기법을 사용해서 수학 공식을 표현할 수 있다.</p>
+<pre><code>$$
+\begin{vmatrix}a &#x26; b\\
+c &#x26; d
+\end{vmatrix}=ad-bc
+$$
+</code></pre>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mo fence="true">∣</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>a</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>b</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>c</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>d</mi></mstyle></mtd></mtr></mtable><mo fence="true">∣</mo></mrow><mo>=</mo><mi>a</mi><mi>d</mi><mo>−</mo><mi>b</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">\begin{vmatrix}a &#x26; b\\
+c &#x26; d
+\end{vmatrix}=ad-bc</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.45em;"><span class="pstrut" style="height:4.4em;"></span><span style="width:0.333em;height:2.400em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.333em" height="2.400em" viewBox="0 0 333 2400"><path d="M145 15 v585 v1200 v585 c2.667,10,9.667,15,21,15
+c10,0,16.667,-5,20,-15 v-585 v-1200 v-585 c-2.667,-10,-9.667,-15,-21,-15
+c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v1200 v585 h43z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">a</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">b</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">d</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.45em;"><span class="pstrut" style="height:4.4em;"></span><span style="width:0.333em;height:2.400em;"><svg xmlns="http://www.w3.org/2000/svg" width="0.333em" height="2.400em" viewBox="0 0 333 2400"><path d="M145 15 v585 v1200 v585 c2.667,10,9.667,15,21,15
+c10,0,16.667,-5,20,-15 v-585 v-1200 v-585 c-2.667,-10,-9.667,-15,-21,-15
+c-10,0,-16.667,5,-20,15z M188 15 H145 v585 v1200 v585 h43z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">a</span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span><span class="mord mathnormal">c</span></span></span></span></span>
+<p>아래와 같이 인라인 수학 공식도 사용할 수 있다.</p>
+<pre><code>텍스트 $e^{2i\pi} = 1$ 텍스트
+</code></pre>
+<p>텍스트 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mn>2</mn><mi>i</mi><mi>π</mi></mrow></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">e^{2i\pi} = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8247em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8247em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">iπ</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> 텍스트</p>
+<h1>외부 링크</h1>
+<p><code>[링크명](URL)</code> 형태로 외부 링크를 설정할 수 있다.<br>
+<a href="https://naver.com">네이버</a><br>
+<code>![사진명](URL)</code> 형태로 외부 이미지를 추가할 수도 있다.</p>
+<h1>아웃라인 확인</h1>
+<p>우측 상단의 메뉴를 열어서 가장 오른쪽 버튼을 누르면 현재 노트의 아웃라인을 확인할 수 있다.<br>
+제목 마크다운으로 작성된 것들이 표시된다.</p>
+<h1>이미지</h1>
+<p>이미지를 붙여넣으면 추가할 수 있다.<br>
+<code>![[이미지 이름]]</code>으로 볼트 내에 있는 이미지를 불러 올 수 있다.<br>
+<code>![[이미지 이름|크기]]</code>로 이미지 크기를 조정할 수도 있다.<br>
+![[image/이더넷.png]]<br>
+![[image/이더넷.png|300]]</p>
+<section data-footnotes class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-test">
+<p><mark>test</mark> <a href="#user-content-fnref-test" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-1">
+<p>풋노트 설명을 기재한다 <a href="#user-content-fnref-1" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-%EC%9D%B4%EB%A6%84">
+<p>이름이 부여된 풋노트 <a href="#user-content-fnref-%EC%9D%B4%EB%A6%84" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>

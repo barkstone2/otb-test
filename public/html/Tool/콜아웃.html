@@ -1,0 +1,102 @@
+<p>주석 내부에 <code>[!info]</code>와 같은 문구를 추가해 콜아웃을 생성할 수 있다.</p>
+<pre><code>> [!info]
+> 주석의 내용이다
+</code></pre>
+<blockquote>
+<p>[!info]<br>
+주석의 내용이다</p>
+</blockquote>
+<h1>콜아웃 제목 변경</h1>
+<p>콜아웃에 표시되는 제목은 변경할 수도 있다.</p>
+<pre><code>> [!tip] 팁 제목이다
+> 팁 내용이다
+</code></pre>
+<blockquote>
+<p>[!tip] 팁 제목이다<br>
+팁 내용이다</p>
+</blockquote>
+<h1>접히는 콜아웃</h1>
+<p>콜아웃 타입 구분자 뒤에 +나 -를 추가해 접히는 콜아웃을 선언할 수도 있다. +를 사용하면 기본이 열린 상태, -를 사용하면 기본이 접힌 상태의 접히는 콜아웃이 선언된다.</p>
+<pre><code>> [!faq]- 콜아웃 제목
+> 콜아웃 내용
+</code></pre>
+<blockquote>
+<p>[!faq]- 콜아웃 제목<br>
+콜아웃 내용</p>
+</blockquote>
+<h1>중첩된 콜아웃</h1>
+<p>콜아웃 내부에서 다른 콜아웃을 선언할 수도 있다.</p>
+<pre><code>> [!question] 첫 번째 콜아웃 제목
+> > [!todo] 두 번째 콜아웃 제목
+> > > [!example] 세 번째 콜아웃 제목
+</code></pre>
+<blockquote>
+<p>[!question] 첫 번째 콜아웃 제목</p>
+<blockquote>
+<p>[!todo] 두 번째 콜아웃 제목</p>
+<blockquote>
+<p>[!example] 세 번째 콜아웃 제목</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1>지원되는 타입 구분자</h1>
+<p>동일한 타입을 여러 방식으로 호출할 수도 있다. 지원되지 않는 타입 사용시 노트 타입으로 인식된다.</p>
+<h2>노트</h2>
+<blockquote>
+<p>[!note]</p>
+</blockquote>
+<h2>요약</h2>
+<blockquote>
+<p>[!abstract]<br>
+summary, tldr</p>
+</blockquote>
+<h2>정보</h2>
+<blockquote>
+<p>[!info]</p>
+</blockquote>
+<h2>TODO</h2>
+<blockquote>
+<p>[!todo]</p>
+</blockquote>
+<h2>팁</h2>
+<blockquote>
+<p>[!tip]<br>
+hint, important</p>
+</blockquote>
+<h2>성공</h2>
+<blockquote>
+<p>[!success]<br>
+check, done</p>
+</blockquote>
+<h2>질문, 의문, FAQ</h2>
+<blockquote>
+<p>[!question]<br>
+help, faq</p>
+</blockquote>
+<h2>경고</h2>
+<blockquote>
+<p>[!warning]<br>
+caution, attention</p>
+</blockquote>
+<h2>실패</h2>
+<blockquote>
+<p>[!failure]<br>
+fail, missing</p>
+</blockquote>
+<h2>위험</h2>
+<blockquote>
+<p>[!danger]<br>
+error</p>
+</blockquote>
+<h2>버그</h2>
+<blockquote>
+<p>[!bug]</p>
+</blockquote>
+<h2>예제</h2>
+<blockquote>
+<p>[!example]</p>
+</blockquote>
+<h2>주석</h2>
+<blockquote>
+<p>[!quote]</p>
+</blockquote>

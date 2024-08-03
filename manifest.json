@@ -1,0 +1,11 @@
+{
+	"id": "obsidian-to-blog",
+	"name": "Obsidian to blog",
+	"version": "0.0.1",
+	"minAppVersion": "1.5.8",
+	"description": "Build and deploy obsidian vault to github page blog.",
+	"author": "barkstone2",
+	"authorUrl": "https://barkstone2.github.io",
+	"fundingUrl": "https://obsidian.md/pricing",
+	"isDesktopOnly": true
+}
